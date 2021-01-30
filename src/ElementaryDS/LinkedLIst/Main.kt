@@ -8,9 +8,11 @@ fun main() {
 
 fun runLinkedList() {
     val list = LinkedList<Int>()
-    list.push(1)
-    list.push(2)
-    list.push(3)
+  list.also {
+      it.push(1)
+      it.push(2)
+      it.push(3)
+  }
     print(list)
 }
 
