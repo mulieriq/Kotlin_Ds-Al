@@ -2,11 +2,16 @@ package ElementaryDS.LinkedLIst
 
 fun main() {
     println("Creating and linking nodes")
-    runNodes()
+   // runNodes()
+    runLinkedList()
 }
 
 fun runLinkedList() {
-    var list = LinkedList<Int>()
+    val list = LinkedList<Int>()
+    list.push(1)
+    list.push(2)
+    list.push(3)
+    print(list)
 }
 
 fun runNodes() {
