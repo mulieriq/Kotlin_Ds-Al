@@ -25,4 +25,8 @@ class LinkedList<T> {
         size++
         return this
     }
+
+    fun append(value:T){
+        return null
+    }
 }
