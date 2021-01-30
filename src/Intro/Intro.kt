@@ -1,7 +1,6 @@
 package Intro
 
 fun main() {
-
     print("Search Results :  ${pseudoBinaryContains(56, listOf(4, 62, 3, 7, 4, 7, 9056, 56, 563, 545, 70, 45, 6750, 51, 42, 78))}")
 }
 
@@ -27,7 +26,4 @@ fun pseudoBinaryContains(value: Int, data: List<Int>): Boolean {
     }
     return false
 }
-//Space Complexity Sample
-
-
 
