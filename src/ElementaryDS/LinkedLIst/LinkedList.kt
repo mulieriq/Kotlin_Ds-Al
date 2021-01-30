@@ -27,6 +27,6 @@ class LinkedList<T> {
     }
 
     fun append(value:T){
-        return null
+        return
     }
 }

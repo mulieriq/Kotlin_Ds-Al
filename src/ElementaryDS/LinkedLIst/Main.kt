@@ -13,7 +13,7 @@ fun runLinkedList() {
       it.push(2)
       it.push(3)
   }
-    print(list)
+    print(list.toString())
 }
 
 fun runNodes() {
