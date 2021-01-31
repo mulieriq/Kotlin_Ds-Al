@@ -27,6 +27,10 @@ class LinkedList<T> {
     }
 
     fun append(value:T){
-        return
+        if(isEmpty()){
+            push(value)
+        }
+        tail?.next = Node(value=value)
+        tail = tail?.next
     }
 }
