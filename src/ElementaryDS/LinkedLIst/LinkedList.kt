@@ -34,7 +34,14 @@ class LinkedList<T> {
         tail?.next = Node(value = value)
         tail = tail?.next
     }
-    fun nodeAt(index:Int):Node<T>{
 
+    fun nodeAt(index: Int): Node<T>? {
+        var currentNode = head
+        var currentIndex = 0
+        while (currentNode != null && currentIndex < index) {
+            currentNode = currentNode.next
+            currentIndex++
+        }
+        return currentNode
     }
 }
