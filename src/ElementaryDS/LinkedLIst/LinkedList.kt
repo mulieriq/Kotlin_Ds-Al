@@ -33,8 +33,5 @@ class LinkedList<T> {
         }
         tail?.next = Node(value = value)
         tail = tail?.next
-
-
-
     }
 }
