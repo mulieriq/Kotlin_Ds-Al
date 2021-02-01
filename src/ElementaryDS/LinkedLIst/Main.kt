@@ -8,20 +8,18 @@ fun main() {
 
 fun runLinkedList() {
     val list = LinkedList<Int>()
-//    list.run {
-////      it.push(1)
-////      it.push(2)
-////      it.push(3)
-////      it.append(0)
-////      it.push(5)
-//        this.push(3)
-//        this.push(2)
-//        this.push(1)
-//
-//    }
-    list.push(3)
-    list.push(2)
-    list.push(1)
+    list.run {
+        this.push(1)
+        this.push(2)
+        this.push(3)
+        this.append(0)
+        this.push(5)
+        this.push(3)
+        this.push(2)
+        this.push(1)
+
+    }
+
     println(list.toString())
     var middleNode = list.nodeAt(1)!!
     for (i in 1..3) {
