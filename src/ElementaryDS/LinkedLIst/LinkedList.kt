@@ -34,4 +34,7 @@ class LinkedList<T> {
         tail?.next = Node(value = value)
         tail = tail?.next
     }
+    fun nodeAt(index:Int):Node<T>{
+
+    }
 }
