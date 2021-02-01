@@ -8,15 +8,15 @@ fun main() {
 
 fun runLinkedList() {
     val list = LinkedList<Int>()
-    list.run {
-        this.push(1)
-        this.push(2)
-        this.push(3)
-        this.append(0)
-        this.push(5)
-        this.push(3)
-        this.push(2)
-        this.push(1)
+    list.let {
+        it.push(1)
+        it.push(2)
+        it.push(3)
+        it.append(0)
+        it.push(5)
+        it.push(3)
+        it.push(2)
+        it.push(1)
 
     }
 
