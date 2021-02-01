@@ -2,24 +2,33 @@ package ElementaryDS.LinkedLIst
 
 fun main() {
     println("Creating and linking nodes")
-   // runNodes()
+    // runNodes()
     runLinkedList()
 }
 
 fun runLinkedList() {
     val list = LinkedList<Int>()
-  list.also {
-//      it.push(1)
-//      it.push(2)
-//      it.push(3)
-//      it.append(0)
-//      it.push(5)
-      it.append(1)
-      it.append(2)
-      it.append(3)
+//    list.run {
+////      it.push(1)
+////      it.push(2)
+////      it.push(3)
+////      it.append(0)
+////      it.push(5)
+//        this.push(3)
+//        this.push(2)
+//        this.push(1)
+//
+//    }
+    list.push(3)
+    list.push(2)
+    list.push(1)
+    println(list.toString())
+    var middleNode = list.nodeAt(1)!!
+    for (i in 1..3) {
+        middleNode = list.insert(-1 * i, middleNode)
 
-  }
-    print(list.toString())
+    }
+    println("After insertion : $list")
 }
 
 fun runNodes() {

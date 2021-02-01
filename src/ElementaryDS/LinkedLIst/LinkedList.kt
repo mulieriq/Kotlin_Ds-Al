@@ -44,4 +44,15 @@ class LinkedList<T> {
         }
         return currentNode
     }
+
+    fun insert(value: T, afterNode: Node<T>): Node<T> {
+        if (tail == afterNode) {
+            append(value)
+            return tail!!
+        }
+        val newNode = Node(value = value, next = afterNode.next)
+        afterNode.next = newNode
+        size++
+        return newNode
+    }
 }
