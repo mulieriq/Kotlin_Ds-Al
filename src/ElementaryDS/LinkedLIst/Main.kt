@@ -9,9 +9,15 @@ fun main() {
 fun runLinkedList() {
     val list = LinkedList<Int>()
   list.also {
-      it.push(1)
-      it.push(2)
-      it.push(3)
+//      it.push(1)
+//      it.push(2)
+//      it.push(3)
+//      it.append(0)
+//      it.push(5)
+      it.append(1)
+      it.append(2)
+      it.append(3)
+
   }
     print(list.toString())
 }
