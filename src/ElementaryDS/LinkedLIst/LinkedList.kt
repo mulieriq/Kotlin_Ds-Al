@@ -5,7 +5,7 @@ class LinkedList<T> {
     private var tail: Node<T>? = null
     private var size = 0
 
-    fun isEmpty(): Boolean {
+    private fun isEmpty(): Boolean {
         return size == 0
     }
 
